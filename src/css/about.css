@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.aboutText {
+  margin: 2em 0 0 2em;
+  width: 50%;
+  font-size: 1.25em;
+  
+}
+.aboutPic {
+  clip-path: circle(50%);
+  margin: 2em 2em 0 2em;
+  height: 15em;
+  width: 15em;
+}
+
+@media only screen and (max-width: 600px) {
+    .about{
+        flex-direction: column;
+    }
+    .aboutText{
+        width: 75%;
+        margin: 1em 0 0 0;
+    }
+  }

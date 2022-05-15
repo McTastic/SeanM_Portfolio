@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* body {
+	background-color: #111;
+} */
+
+.greeting {
+	margin-top: 4em;
+	font-family: "Montserrat";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	letter-spacing: 1px;
+}
+
+.greeting h1 {
+	background: url(https://data.whicdn.com/images/347096029/original.gif);
+	filter: contrast(70%);
+	background-size: cover;
+	background-position: left top;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	/* text-shadow: -1px -1px 10px rgb(255, 60, 0); */
+	font-size: 120px;
+	line-height: .75;
+	margin: 10px 0;
+	animation: infinite .1s;
+}
+.greeting img{
+    margin-top: 1em;
+	border-radius: 10px 100px / 120px;
+	filter: drop-shadow(0 15px 50px  rgb(172, 58, 5))
+    /* box-shadow: 15px 5px 10px rgb(51, 50, 50); */
+}
+@media only screen and (max-width: 600px) {
+    .greeting h1 {
+      font-size: 50px;
+    }
+    .greeting img{
+        height: 10em;
+        width: 75%;
+    }
+  }

@@ -1,0 +1,8 @@
+.Contact{
+    margin-top: 15em;
+}
+@media only screen and (max-width: 600px) {
+    .Contact {
+        margin-top: 5em;
+    }
+  }

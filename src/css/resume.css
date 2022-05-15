@@ -1,0 +1,11 @@
+.resume{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: auto;
+        height: 30em;
+    }
+  }
