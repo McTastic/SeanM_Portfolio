@@ -3,21 +3,22 @@ import NavRoutes from "./components/NavRoutes";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useState } from "react";
+import { Box, IconButton } from "@mui/material";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 const darkTheme = {
   palette: {
-    mode: "dark"
+    mode: "dark",
   },
   typography: {
     fontFamily: ["Work Sans"].join(","),
-    text:{
-      primary: "#ffff"
-    }
+    text: {},
   },
 };
 const lightTheme = {
   palette: {
-    mode: "light"
+    mode: "light",
   },
   typography: {
     fontFamily: ["Work Sans"].join(","),
@@ -25,14 +26,24 @@ const lightTheme = {
 };
 
 function App() {
-  const [isDarkTheme, setDarkTheme] = useState(true)
+  const [isDarkTheme, setDarkTheme] = useState(true);
+  const themeToggle = () =>{
+    setDarkTheme(!isDarkTheme)
+  }
 
-  return( 
-    <ThemeProvider theme={isDarkTheme ? createTheme(darkTheme) : createTheme(lightTheme)}>
-    <CssBaseline />
-  <NavRoutes />
-  </ThemeProvider>
-  )
+  return (
+    <ThemeProvider
+      theme={isDarkTheme ? createTheme(darkTheme) : createTheme(lightTheme)}
+    >
+      <CssBaseline />
+      <Box sx={{position: "absolute", top:"2em", margin: "auto 45%", zIndex:"999",}}>
+        <IconButton onClick={themeToggle}>
+          {isDarkTheme ? <Brightness7Icon fontSize="large" /> : <Brightness4Icon fontSize="large"/>}
+        </IconButton>
+      </Box>
+      <NavRoutes />
+    </ThemeProvider>
+  );
 }
 
 export default App;

@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
+
 const pages = ["About", "Projects", "Contact", "Resume"];
 
 const Navbar = ({ currentPage, handlePageChange }) => {
@@ -24,18 +25,6 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   };
 
   return (
-    // <AppBar
-    //   position="fixed"
-    //   sx={{
-    //     backgroundColor: `rgba(0,0,0,0)`,
-    //     boxShadow:"none",
-    //     filter:"none",
-    //     height: "4em",
-    //     display: "flex",
-    //     justifyContent: "center",
-    //     alignItems: "start",
-    //   }}
-    // >
       <Container maxWidth="xl" className="headerContainer" sx={{ ml: 0 }}>
         <Toolbar disableGutters>
           <Typography
@@ -107,6 +96,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
           <Box position="relative" left="70em"sx={{display: { xs: "none", md: "flex",} }}>
             {pages.map((page) => (
               <Button
+                disableRipple
                 key={page}
                 onClick={() => handlePageChange(page)}
                 sx={{
@@ -131,7 +121,6 @@ const Navbar = ({ currentPage, handlePageChange }) => {
           </Box>
         </Toolbar>
       </Container>
-    // </AppBar>
   );
 };
 export default Navbar;
