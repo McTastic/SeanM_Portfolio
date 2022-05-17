@@ -1,21 +1,28 @@
 import "../../css/home.css";
-import FireGIF from "../../images/campfire-pixel.gif";
+import { Grid, Typography, Box } from "@mui/material";
 
 const Home = () => {
   return (
     <>
-      <div class="stars"></div>
-      <div class="twinkling"></div>
-      <div class="clouds"></div>
-      <div className="greeting">
-        <h1>
-          Greetings!
-          <br />
-          <br />
-          Stay Awhile!
-        </h1>
-          <img src={FireGIF} alt="pixel campfire" />
-      </div>
+      <Box position="relative" right="35em" top="10em" mt="10em">
+        {/* <Typography sx={{fontSize:"150px"}}>Hi, I'm </Typography> */}
+        <Typography sx={{ fontSize: "150px", mt:"1em" }}>Sean McCarthy</Typography>
+        <Typography className="waviy">
+          <span className="one">W</span>
+          <span className="two">E</span>
+          <span className="three">B</span>
+          <span style={{width:".5em"}}></span>
+          <span className="four" >D</span>
+          <span className="five">E</span>
+          <span className="six">V</span>
+          <span className="seven">E</span>
+          <span className="eight">L</span>
+          <span className="nine" >O</span>
+          <span className="ten">P</span>
+          <span className="eleven">E</span>
+          <span className="twelve">R</span>
+        </Typography>
+      </Box>
     </>
   );
 };

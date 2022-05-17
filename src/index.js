@@ -10,6 +10,10 @@ const darkTheme = createTheme({
   palette: {
     mode: 'dark',
   },
+  typography:{
+    fontFamily:["Sora"]
+    .join(",")
+  }
 });
 
 ReactDOM.render(
