@@ -3,9 +3,9 @@ body {
   text-align: center;
   background-attachment: fixed;
 }
-header {
+/* header {
   background-color: rgb(33, 44, 54);
-}
+} */
 /* .MuiButton-text:hover{
 	color: #fdec6e;
 	text-shadow:1px 1px 20px #fdec6e;

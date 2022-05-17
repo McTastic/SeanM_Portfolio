@@ -24,17 +24,18 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   };
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        backgroundColor: `rgba(33,44,54, 0.726)`,
-        backdropFilter: `blur(5px)`,
-        height: "4em",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "start",
-      }}
-    >
+    // <AppBar
+    //   position="fixed"
+    //   sx={{
+    //     backgroundColor: `rgba(0,0,0,0)`,
+    //     boxShadow:"none",
+    //     filter:"none",
+    //     height: "4em",
+    //     display: "flex",
+    //     justifyContent: "center",
+    //     alignItems: "start",
+    //   }}
+    // >
       <Container maxWidth="xl" className="headerContainer" sx={{ ml: 0 }}>
         <Toolbar disableGutters>
           <Typography
@@ -103,19 +104,21 @@ const Navbar = ({ currentPage, handlePageChange }) => {
           >
             SeanM
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box position="relative" left="70em"sx={{display: { xs: "none", md: "flex",} }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={() => handlePageChange(page)}
                 sx={{
+                  color: "text.primary",
                   my: 2,
-                  color: "rgb(206, 89, 104)",
                   display: "block",
-                  fontSize: "1.5em",
-                  "&.MuiButton-text:hover":{color: "#fdec6e",
+                  fontSize: "3em",
+                  "&.MuiButton-text:hover":{
+                  background: "-webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%)",
+                  WebkitBackgroundClip:"text",
+                  WebkitTextFillColor:"transparent",
                   backgroundColor:"transparent",
-                  textShadow:"1px 1px 20px #fdec6e",
                   mozTransition: "all 0.2s ease-in",
                   oTransition: "all 0.2s ease-in",
                   webkitTransition: "all 0.2s ease-in",
@@ -128,7 +131,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
           </Box>
         </Toolbar>
       </Container>
-    </AppBar>
+    // </AppBar>
   );
 };
 export default Navbar;

@@ -6,22 +6,10 @@ import reportWebVitals from "./reportWebVitals";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
-  typography:{
-    fontFamily:["Work Sans"]
-    .join(",")
-  }
-});
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
-      <CssBaseline />
       <App />
-    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

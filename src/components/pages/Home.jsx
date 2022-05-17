@@ -13,7 +13,7 @@ const Home = () => {
             top: ".5em",
             lineHeight: ".75",
             mb: ".2em",
-            WebkitBoxReflect:"below 155px linear-gradient(to bottom , rgba(0,0,0,0.1)55%, rgba(0,0,0,0.3));"
+            // WebkitBoxReflect:"below 155px linear-gradient(to bottom , rgba(0,0,0,0.1)55%, rgba(0,0,0,0.3));"
           }}
         >
           SEAN <br />

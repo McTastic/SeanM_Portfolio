@@ -15,8 +15,8 @@
 	font-size: 100px;
 	position: relative;
 	display: inline-block;
-	background: -webkit-linear-gradient(315deg, #20bf55 0%, #01baef 74%);
-	filter: drop-shadow(5px 5px 5px rgb(0, 242, 255));
+	background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%);
+	filter: drop-shadow(8px 3px 3px rgb(0, 242, 255));
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 
