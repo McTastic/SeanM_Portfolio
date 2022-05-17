@@ -7,16 +7,16 @@
 } */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 .waviy {
-	position: relative;
-	-webkit-box-reflect: below -90px linear-gradient(to bottom , rgba(0,0,0,0.0)18%, rgba(0,0,0,0.9)95%);
-	letter-spacing: 5px;
+
+	-webkit-box-reflect: below -65px linear-gradient(to bottom , rgba(0,0,0,0.0)25%, rgba(0,0,0,0.9)95%);
+	letter-spacing: 1px;
   }
   .waviy span {
-
-	font-size: 130px;
+	font-size: 100px;
 	position: relative;
 	display: inline-block;
 	background: -webkit-linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+	filter: drop-shadow(5px 5px 5px rgb(0, 242, 255));
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
 

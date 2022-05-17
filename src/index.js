@@ -11,7 +11,7 @@ const darkTheme = createTheme({
     mode: 'dark',
   },
   typography:{
-    fontFamily:["Sora"]
+    fontFamily:["Work Sans"]
     .join(",")
   }
 });
