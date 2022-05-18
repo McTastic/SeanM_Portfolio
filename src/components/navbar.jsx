@@ -25,12 +25,14 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   };
 
   return (
-      <Container maxWidth="xl" className="headerContainer" sx={{ ml: 0 }}>
-        <Toolbar disableGutters>
+      <Container maxWidth="x2" className="headerContainer" sx={{ ml: 0, display:"flex", justifyContent:"flex-end" }}>
+        <Toolbar disableGutters >
           <Typography
             onClick={() => handlePageChange("Home")}
             className="nameLogo"
             variant="h3"
+            position="relative"
+            right="20em"
             noWrap
             component="div"
             sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
@@ -88,12 +90,12 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", sm: "flex", md: "none" },
+              display: { xs: "flex", md: "none" },
             }}
           >
             SeanM
           </Typography>
-          <Box position="relative" left="70em"sx={{display: { xs: "none", md: "flex",} }}>
+          <Box sx={{display: { xs: "none", md: "flex",} }}>
             {pages.map((page) => (
               <Button
                 disableRipple
@@ -101,8 +103,6 @@ const Navbar = ({ currentPage, handlePageChange }) => {
                 onClick={() => handlePageChange(page)}
                 sx={{
                   color: "text.primary",
-                  my: 2,
-                  display: "block",
                   fontSize: "3em",
                   "&.MuiButton-text:hover":{
                   background: "-webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%)",

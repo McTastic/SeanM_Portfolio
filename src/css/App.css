@@ -3,17 +3,6 @@ body {
   text-align: center;
   background-attachment: fixed;
 }
-/* header {
-  background-color: rgb(33, 44, 54);
-} */
-/* .MuiButton-text:hover{
-	color: #fdec6e;
-	text-shadow:1px 1px 20px #fdec6e;
-	-moz-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	-webkit-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in;
-} */
 .nameLogo{
   cursor: pointer;
   padding-right: 1em;
@@ -24,9 +13,6 @@ body {
 	-webkit-background-clip: text;
 	text-transform: uppercase;
 	line-height: .75;
-}
-.navOptions{
-	color: rgb(206, 89, 104);
 }
 .mobileNameLogo{
 	font-weight: bold;

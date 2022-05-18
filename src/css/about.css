@@ -1,25 +1,31 @@
 .about {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-top: 3em;
+  margin-top: 7em;
+
 }
-.aboutText {
-  margin: 2em 0 0 2em;
-  width: 50%;
-  font-size: 1.25em;
-  
+.aboutName {
+  background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+}
+.picContainer{
+  background-image: linear-gradient(to bottom right,#302add,#13c256);
+  overflow: hidden;
+  border-radius: 1em;
 }
 .aboutPic {
-  clip-path: circle(50%);
-  margin: 2em 2em 0 2em;
-  height: 15em;
-  width: 15em;
+  aspect-ratio:1/1;
+  height: 600px;
+  float: right;
+  border-radius: 1em;
+  mix-blend-mode: overlay;
 }
 
 @media only screen and (max-width: 600px) {
     .about{
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .aboutText{
         width: 75%;

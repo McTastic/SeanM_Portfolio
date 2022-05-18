@@ -10,6 +10,9 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 const darkTheme = {
   palette: {
     mode: "dark",
+    background:{
+      default: "black"
+    }
   },
   typography: {
     fontFamily: ["Work Sans"].join(","),
@@ -36,7 +39,7 @@ function App() {
       theme={isDarkTheme ? createTheme(darkTheme) : createTheme(lightTheme)}
     >
       <CssBaseline />
-      <Box sx={{position: "absolute", top:"2em", margin: "auto 45%", zIndex:"999",}}>
+      <Box sx={{position: "absolute",top: "10px",left:"50%", right:"50%", zIndex:"999",}}>
         <IconButton onClick={themeToggle}>
           {isDarkTheme ? <Brightness7Icon fontSize="large" /> : <Brightness4Icon fontSize="large"/>}
         </IconButton>

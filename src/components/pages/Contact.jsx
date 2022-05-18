@@ -4,8 +4,6 @@ import "../../css/contact.css";
 const Contact = () => {
   return (
     <>
-      <div class="stars"></div>
-      <div class="twinkling"></div>
       <ContactForm />
     </>
   );
