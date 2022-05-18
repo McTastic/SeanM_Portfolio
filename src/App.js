@@ -7,16 +7,18 @@ import { Box, IconButton } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
+
 const darkTheme = {
   palette: {
     mode: "dark",
     background:{
-      default: "black"
+      default: "black",
+      gradient1:"-webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%)",
+      gradient2:"#ffff"
     }
   },
   typography: {
     fontFamily: ["Work Sans"].join(","),
-    text: {},
   },
 };
 const lightTheme = {

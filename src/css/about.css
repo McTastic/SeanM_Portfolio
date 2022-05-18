@@ -2,25 +2,27 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 7em;
+  margin-top: 10em;
 
 }
 .aboutName {
-  background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%);
+  /* background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%);
 	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
+	  -webkit-text-fill-color: transparent; */
 }
 .picContainer{
   background-image: linear-gradient(to bottom right,#302add,#13c256);
   overflow: hidden;
-  border-radius: 1em;
+  border-radius: 3em;
+  margin-left: 5em;
 }
 .aboutPic {
   aspect-ratio:1/1;
   height: 600px;
   float: right;
-  border-radius: 1em;
+  border-radius: 3em;
   mix-blend-mode: overlay;
+
 }
 
 @media only screen and (max-width: 600px) {
