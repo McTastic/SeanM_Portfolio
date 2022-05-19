@@ -99,6 +99,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             {pages.map((page) => (
               <Button
                 disableRipple
+                className={currentPage===page ? "activePage" : page}
                 key={page}
                 onClick={() => handlePageChange(page)}
                 sx={{

@@ -23,9 +23,9 @@ const About = () => {
             className="aboutName"
             sx={{
               color: "text.primary",
-              display:"inline-flex",
+              display:{xs:"inline",md:"inline-flex"},
               background:
-                "linear-gradient(#20bf55 0%, #01baef 74%)",
+                "-webkit-linear-gradient(#20bf55 0%, #01baef 74%)",
               backgroundClip: "text",
               WebkitTextFillColor: "transparent",
               transition:"all 1.5s",
