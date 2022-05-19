@@ -24,6 +24,9 @@ const darkTheme = {
 const lightTheme = {
   palette: {
     mode: "light",
+    background:{
+      default: "#DDE4E7"
+    }
   },
   typography: {
     fontFamily: ["Work Sans"].join(","),
