@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Box, IconButton } from "@mui/material";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import Widgets from "../src/components/widgets";
 
 const darkTheme = {
   palette: {
@@ -43,11 +44,11 @@ function App() {
       theme={isDarkTheme ? createTheme(darkTheme) : createTheme(lightTheme)}
     >
       <CssBaseline />
+      <Widgets
+      isDarkTheme={isDarkTheme} 
+      themeToggle={themeToggle}/>
     <Box>
       <Box sx={{position: "absolute",top: "10px",left:"50%", right:"50%", zIndex:"999",}}>
-        <IconButton onClick={themeToggle}>
-          {isDarkTheme ? <Brightness7Icon fontSize="large" /> : <Brightness4Icon fontSize="large"/>}
-        </IconButton>
       </Box>
       <NavRoutes />
       </Box>
