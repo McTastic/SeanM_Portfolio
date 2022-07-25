@@ -4,11 +4,17 @@ import { Grid, Typography, Box } from "@mui/material";
 const Home = () => {
   return (
     <>
-      <Box textAlign="left" position="relative" top="10em" mt="10em">
+      <Box 
+      textAlign="left" 
+      position="relative" 
+      sx={{
+        top: {xs:"5em",md:"10em"},
+      }}
+      >
         {/* <Typography sx={{fontSize:"150px"}}>Hi, I'm </Typography> */}
         <Typography
           sx={{
-            fontSize: "130px",
+            fontSize: {xs:"50px",md:"130px"},
             position: "relative",
             top: ".5em",
             lineHeight: ".75",
@@ -18,7 +24,7 @@ const Home = () => {
           SEAN <br />
           McCARTHY
         </Typography>
-        <Typography className="waviy">
+        <Typography className="waivy">
           <span className="one">W</span>
           <span className="two">E</span>
           <span className="three">B</span>

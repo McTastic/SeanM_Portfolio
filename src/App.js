@@ -4,8 +4,6 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useState } from "react";
 import { Box, IconButton } from "@mui/material";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
 import Widgets from "../src/components/widgets";
 
 const darkTheme = {
@@ -13,8 +11,7 @@ const darkTheme = {
     mode: "dark",
     background:{
       default: "black",
-      gradient1:"-webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%)",
-      gradient2:"#ffff"
+
     }
   },
   typography: {
@@ -50,7 +47,9 @@ function App() {
     <Box>
       <Box sx={{position: "absolute",top: "10px",left:"50%", right:"50%", zIndex:"999",}}>
       </Box>
-      <NavRoutes />
+      <NavRoutes 
+      isDarkTheme={isDarkTheme}
+      />
       </Box>
     </ThemeProvider>
   );

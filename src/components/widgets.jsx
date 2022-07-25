@@ -11,20 +11,21 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { fontSize } from "@mui/system";
 
 export default function Widgets({ themeToggle, isDarkTheme }) {
+    const linkGH = () => window.open("https://github.com/mctastic", "_blank")
+    const linkLink = () => window.open("https://www.linkedin.com/in/smccarthydev/", "_blank")
   return (
     <List
       sx={{
         position: "fixed",
-        bottom: "10em",
+        bottom: "1em",
       }}
     >
       <ListItem>
         <ListItemButton
           disableRipple
-          href="https://github.com/mctastic"
+          onClick={() => linkGH()}
           sx={{
             fontSize: "30px",
             background: "linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)",
@@ -55,7 +56,7 @@ export default function Widgets({ themeToggle, isDarkTheme }) {
       </ListItem>
       <ListItem>
         <ListItemButton
-          href="https://www.linkedin.com/in/smccarthydev/"
+          onClick={()=> linkLink()}
           sx={{
             fontSize: "30px",
             background: "linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%)",
@@ -73,7 +74,7 @@ export default function Widgets({ themeToggle, isDarkTheme }) {
               fontSize: "30px",
               marginRight:"20px",
               position:"relative",
-              left:"-15px"
+              left:"-1px"
             }}
           >
             Linkedin

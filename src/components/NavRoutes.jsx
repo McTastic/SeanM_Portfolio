@@ -6,7 +6,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 
-export default function NavRoutes() {
+export default function NavRoutes({isDarkTheme}) {
   const [currentPage, setCurrentPage] = useState("Home");
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -15,7 +15,9 @@ export default function NavRoutes() {
       return <Home />;
     }
     if (currentPage === "About") {
-      return <About />;
+      return <About
+      isDarkTheme={isDarkTheme}
+      />;
     }
     if (currentPage === "Projects") {
       return <Projects />;

@@ -6,12 +6,12 @@
 	filter: drop-shadow(5px 5px 2px rgb(8, 242, 223))
 } */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-.waviy {
+.waivy {
 
 	-webkit-box-reflect: below -65px linear-gradient(to bottom , rgba(0,0,0,0.0)25%, rgba(0,0,0,0.9)95%);
 	letter-spacing: 1px;
   }
-  .waviy span {
+  .waivy span {
 	font-size: 100px;
 	position: relative;
 	display: inline-block;
@@ -96,12 +96,15 @@
 	animation: 2 .1s;
 } */
 
-/* @media only screen and (max-width: 600px) {
-    .greeting h1 {
-      font-size: 50px;
-    }
-    .greeting img{
-        height: 10em;
-        width: 75%;
-    }
-  } */
+@media only screen and (max-width: 600px) {
+	.waivy {
+		width: 200vw;
+		-webkit-box-reflect: below -20px linear-gradient(to bottom , rgba(0,0,0,0.0)25%, rgba(0,0,0,0.9)95%);
+	}
+	.waivy span {
+		font-size: 40px;
+		filter: drop-shadow(-2px -1px -1px rgb(0, 242, 255));
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+  }
