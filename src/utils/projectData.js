@@ -18,7 +18,7 @@ export const projects = [
     description:
       "Full-Stack website utilizing the MERN stack. Allows the user to rate movies on a 1 to 5 scale utilizing the imDB API",
     picture: image1,
-    url: "https://kmwine02-project03.herokuapp.com/",
+    url: "https://xmas-movie-db.herokuapp.com/",
   },
   {
     name: "Travel Guide",
