@@ -3,9 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 10em;
-
-}
-.aboutName {
+  flex-wrap: wrap;
 
 }
 .picContainer{
@@ -16,19 +14,26 @@
 }
 .aboutPic {
   aspect-ratio:1/1;
-  height: 600px;
+  height: 30rem;
   float: right;
   border-radius: 3em;
   mix-blend-mode: overlay;
-
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .about{
         flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
     .aboutText{
         width: 75%;
         margin: 1em 0 0 0;
+        font-size: 12px;
+    }
+    .picContainer{
+      margin: auto;
+    }
+    .aboutPic{
+      height: 20rem;
     }
   }

@@ -9,12 +9,6 @@ const darkTheme1 = {
   background: "linear-gradient(#20bf55 0%, #01baef 74%)",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
-  transition: "all 1.5s",
-  "&:hover": {
-    background: "linear-gradient( #01baef 55%,#20bf55 )",
-    backgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  },
 }
 const lightTheme1 = {
   color: "text.primary",
@@ -22,23 +16,16 @@ const lightTheme1 = {
   background: "linear-gradient(red 0%, purple 74%)",
   backgroundClip: "text",
   WebkitTextFillColor: "transparent",
-  transition: "all 1.5s",
-  "&:hover": {
-    background: "linear-gradient( #01baef 55%,#20bf55 )",
-    backgroundClip: "text",
-    WebkitTextFillColor: "transparent",
-  },
 }
 
   return (
-    <Box>
       <Box className="about">
         <Typography
           component="h2"
           className="aboutText"
           sx={{
             marginLeft: ".5em",
-            fontSize: "60px",
+            fontSize: { xs: "1.5rem", md: "4rem" },
             fontFamily: "Inter",
             lineHeight: "1.2",
             maxWidth: "70%",
@@ -86,7 +73,6 @@ const lightTheme1 = {
           <img className="aboutPic" src={Picture} alt="Self portrait of me" />
         </Box>
       </Box>
-    </Box>
   );
 };
 

@@ -1,10 +1,7 @@
 import {
   List,
   ListItem,
-  Button,
   ListItemButton,
-  ListItemIcon,
-  IconButton,
   Typography
 } from "@mui/material/";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -20,6 +17,7 @@ export default function Widgets({ themeToggle, isDarkTheme }) {
       sx={{
         position: "fixed",
         bottom: "1em",
+        left: { xs: "-1rem", md: "1rem" },
       }}
     >
       <ListItem>

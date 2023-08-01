@@ -24,9 +24,8 @@ export default function ActionAreaCard() {
         >
           <Card
             sx={{
-              maxWidth: 800,
-              marginTop: 15,
-              marginBottom: 2,
+              maxWidth: { xs: 300, sm: 500, xl: 745},
+              margin: "15px 30px 45px 20px",
               boxShadow: "15px 15px  rgb(33,150,115) , -15px -15px rgb(33,150,55)",
               borderRadius:"10px"
             }}
@@ -34,7 +33,7 @@ export default function ActionAreaCard() {
             <CardActionArea>
               <CardMedia
                 component="img"
-                height="350"
+                sx={{height: { xs: 200, sm: 300, xl: 400}}}
                 image={project.picture}
                 alt="project picture"
                 onClick={(e) => window.open(project.url)}

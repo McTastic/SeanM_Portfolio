@@ -16,8 +16,6 @@ body {
 }
 .mobileNameLogo{
 	font-weight: bold;
-	position: relative;
-	left: 4em;
 }
 .activePage{
 	background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%) !important;
@@ -25,10 +23,10 @@ body {
 	-webkit-text-fill-color: transparent !important;
 	filter: drop-shadow(2px 5px 2px blue)
   }
-  #root canvas {
+  /* #root canvas {
 	display: block;
 	position: fixed;
 	height: 100vh;
 	top: 6;
 	z-index: -1;
-  }
+  } */

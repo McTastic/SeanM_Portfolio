@@ -5,80 +5,79 @@
 	font-size: 200px;
 	filter: drop-shadow(5px 5px 2px rgb(8, 242, 223))
 } */
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 .waivy {
-
-	-webkit-box-reflect: below -65px linear-gradient(to bottom , rgba(0,0,0,0.0)25%, rgba(0,0,0,0.9)95%);
-	letter-spacing: 1px;
+  -webkit-box-reflect: below -65px linear-gradient(to bottom, rgba(0, 0, 0, 0)
+        25%, rgba(0, 0, 0, 0.9) 95%);
+  letter-spacing: 1px;
+}
+.waivy span {
+  font-size: 100px;
+  position: relative;
+  display: inline-block;
+  background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%);
+  filter: drop-shadow(8px 3px 3px rgb(0, 242, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.one {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 1);
+}
+.two {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 2);
+}
+.three {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 3);
+}
+.four {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 4);
+}
+.five {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 5);
+}
+.six {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 6);
+}
+.seven {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 7);
+}
+.eight {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 8);
+}
+.nine {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 9);
+}
+.ten {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 10);
+}
+.eleven {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 11);
+}
+.twelve {
+  animation: waviy 1s 2;
+  animation-delay: calc(0.1s * 12);
+}
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
   }
-  .waivy span {
-	font-size: 100px;
-	position: relative;
-	display: inline-block;
-	background: -webkit-linear-gradient(115deg, #20bf55 0%, #01baef 74%);
-	filter: drop-shadow(8px 3px 3px rgb(0, 242, 255));
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-
-
+  20% {
+    transform: translateY(-20px);
   }
-  .one{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 1);
-  }
-  .two{
-	animation: waviy 1s 2;	
-	animation-delay: calc(.1s * 2);
-  }
-  .three{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 3);
-  }
-  .four{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 4);
-  }
-  .five{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 5);
-  }
-  .six{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 6);
-  }
-  .seven{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 7);
-  }
-  .eight{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 8);
-  }
-  .nine{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 9);
-  }
-  .ten{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 10);
-  }
-  .eleven{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 11);
-  }
-  .twelve{
-	animation: waviy 1s 2;
-	animation-delay: calc(.1s * 12);
-  }
-  @keyframes waviy {
-	0%,40%,100% {
-	  transform: translateY(0)
-	}
-	20% {
-	  transform: translateY(-20px)
-	}
-  }
-
+}
 
 /* .nameEffect h1 {
 	background: url(https://data.whicdn.com/images/347096029/original.gif);
@@ -97,14 +96,15 @@
 } */
 
 @media only screen and (max-width: 600px) {
-	.waivy {
-		width: 200vw;
-		-webkit-box-reflect: below -20px linear-gradient(to bottom , rgba(0,0,0,0.0)25%, rgba(0,0,0,0.9)95%);
-	}
-	.waivy span {
-		font-size: 40px;
-		filter: drop-shadow(-2px -1px -1px rgb(0, 242, 255));
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+  .waivy {
+    width: 200vw;
+    -webkit-box-reflect: below -20px linear-gradient(to bottom, rgba(0, 0, 0, 0)
+          25%, rgba(0, 0, 0, 0.9) 95%);
   }
+  .waivy span {
+    font-size: 40px;
+    filter: drop-shadow(-2px -1px -1px rgb(0, 242, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
