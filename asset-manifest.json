@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7ee4545a.chunk.css",
+    "main.js": "/static/js/main.cc00c179.chunk.js",
+    "main.js.map": "/static/js/main.cc00c179.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.734450d0.js",
+    "runtime-main.js.map": "/static/js/runtime-main.734450d0.js.map",
+    "static/js/2.16864c73.chunk.js": "/static/js/2.16864c73.chunk.js",
+    "static/js/2.16864c73.chunk.js.map": "/static/js/2.16864c73.chunk.js.map",
+    "static/js/3.17066734.chunk.js": "/static/js/3.17066734.chunk.js",
+    "static/js/3.17066734.chunk.js.map": "/static/js/3.17066734.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.7ee4545a.chunk.css.map": "/static/css/main.7ee4545a.chunk.css.map",
+    "static/js/2.16864c73.chunk.js.LICENSE.txt": "/static/js/2.16864c73.chunk.js.LICENSE.txt",
+    "static/media/SeanM_Res.fd0bbaf1.pdf": "/static/media/SeanM_Res.fd0bbaf1.pdf",
+    "static/media/chatapp.27e83157.png": "/static/media/chatapp.27e83157.png",
+    "static/media/ptc-binder-pic.5818caad.jpg": "/static/media/ptc-binder-pic.5818caad.jpg",
+    "static/media/screenshotTGuide.49ac5bef.png": "/static/media/screenshotTGuide.49ac5bef.png",
+    "static/media/self_pic.b34f3056.jpg": "/static/media/self_pic.b34f3056.jpg",
+    "static/media/weatherScreenshot.8b56ae3e.png": "/static/media/weatherScreenshot.8b56ae3e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.734450d0.js",
+    "static/js/2.16864c73.chunk.js",
+    "static/css/main.7ee4545a.chunk.css",
+    "static/js/main.cc00c179.chunk.js"
+  ]
+}
