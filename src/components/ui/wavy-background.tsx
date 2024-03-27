@@ -2,6 +2,7 @@
 import { cn } from "../../utils/cn.ts";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
+import "./wavy.css"
  
 export const WavyBackground = ({
   children,
@@ -52,7 +53,7 @@ isDarkTheme?: boolean;
     canvas = canvasRef.current;
     ctx = canvas.getContext("2d");
     w = ctx.canvas.width = window.innerWidth;
-    h = ctx.canvas.height = 1200;
+    h = ctx.canvas.height = window.innerHeight;
     ctx.filter = `blur(${blur}px)`;
     nt = 0;
     window.onresize = function () {
@@ -115,7 +116,7 @@ isDarkTheme?: boolean;
   return (
     <div
       className={cn(
-        "absolute inset-0 z-0 overflow-hidden",
+        "wavy absolute inset-0 z-0 overflow-hidden",
         containerClassName
       )}
       style={{

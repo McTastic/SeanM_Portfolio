@@ -1,8 +1,18 @@
 import "../../css/home.css";
+import { useState, useEffect } from "react";
 import { Grid, Typography, Box } from "@mui/material";
 import { WavyBackground } from "../ui/wavy-background.tsx";
 
 const Home = ({isDarkTheme}) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth <= 960) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  }, []);
   return (
     <>
       <Box
@@ -12,7 +22,7 @@ const Home = ({isDarkTheme}) => {
           top: { xs: "5em", md: "10em" },
         }}
         >
-        <WavyBackground isDarkTheme={isDarkTheme}/>
+        {isMobile ? null : <WavyBackground isDarkTheme={isDarkTheme}/>}
         {/* <Typography sx={{fontSize:"150px"}}>Hi, I'm </Typography> */}
         <div className="nameTitle">
         <Typography

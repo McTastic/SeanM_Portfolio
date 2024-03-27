@@ -1,5 +1,4 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -25,7 +24,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
   };
 
   return (
-      <Container maxWidth="x2" className="headerContainer" sx={{ ml: 0, display:"flex", justifyContent:"flex-end" }}>
+      <Container maxWidth="x2" className="headerContainer" sx={{ ml: 0, display:"flex", justifyContent:"flex-end"}}>
         <Toolbar disableGutters >
           <Typography
             onClick={() => handlePageChange("Home")}
@@ -35,12 +34,12 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             right="20em"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ mr: 2, display: { xs: "none", md: "flex" },}}
           >
             SeanM
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, zIndex:"999" }}>
             <IconButton
               size="large"
               className="hamburgerMenu"
@@ -67,11 +66,11 @@ const Navbar = ({ currentPage, handlePageChange }) => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none" }
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={handleCloseNavMenu} >
                   <Typography
                     textAlign="left"
                     onClick={() => handlePageChange(page)}
@@ -90,6 +89,7 @@ const Navbar = ({ currentPage, handlePageChange }) => {
             component="div"
             sx={{
               display: { xs: "flex", md: "none" },
+              zIndex: "999"
             }}
           >
             SeanM
