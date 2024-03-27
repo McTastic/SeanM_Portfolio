@@ -11,6 +11,10 @@
         25%, rgba(0, 0, 0, 0.9) 95%);
   letter-spacing: 1px;
 }
+.nameTitle{
+  position: absolute;
+  top: 8rem;
+}
 .waivy span {
   font-size: 100px;
   position: relative;

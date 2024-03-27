@@ -12,7 +12,8 @@ export default function NavRoutes({isDarkTheme}) {
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
     if (currentPage === "Home") {
-      return <Home />;
+      return <Home
+       isDarkTheme={isDarkTheme}/>;
     }
     if (currentPage === "About") {
       return <About

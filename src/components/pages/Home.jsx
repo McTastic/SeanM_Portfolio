@@ -1,20 +1,23 @@
 import "../../css/home.css";
 import { Grid, Typography, Box } from "@mui/material";
+import { WavyBackground } from "../ui/wavy-background.tsx";
 
-const Home = () => {
+const Home = ({isDarkTheme}) => {
   return (
     <>
-      <Box 
-      textAlign="left" 
-      position="relative" 
-      sx={{
-        top: {xs:"5em",md:"10em"},
-      }}
-      >
+      <Box
+        textAlign="left"
+        position="relative"
+        sx={{
+          top: { xs: "5em", md: "10em" },
+        }}
+        >
+        <WavyBackground isDarkTheme={isDarkTheme}/>
         {/* <Typography sx={{fontSize:"150px"}}>Hi, I'm </Typography> */}
+        <div className="nameTitle">
         <Typography
           sx={{
-            fontSize: {xs:"50px",md:"130px"},
+            fontSize: { xs: "50px", md: "130px" },
             position: "relative",
             top: ".5em",
             lineHeight: ".75",
@@ -39,6 +42,7 @@ const Home = () => {
           <span className="eleven">E</span>
           <span className="twelve">R</span>
         </Typography>
+        </div>
       </Box>
     </>
   );

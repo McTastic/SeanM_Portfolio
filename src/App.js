@@ -11,7 +11,6 @@ const darkTheme = {
     mode: "dark",
     background:{
       default: "black",
-
     }
   },
   typography: {

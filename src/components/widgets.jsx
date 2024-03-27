@@ -18,6 +18,7 @@ export default function Widgets({ themeToggle, isDarkTheme }) {
         position: "fixed",
         bottom: "1em",
         left: { xs: "-1rem", md: "1rem" },
+        zIndex: 999
       }}
     >
       <ListItem>
