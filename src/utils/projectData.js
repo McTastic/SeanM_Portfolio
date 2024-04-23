@@ -3,7 +3,7 @@ import image2 from "../images/screenshotTGuide.png";
 import image3 from "../images/ptc-binder-pic.jpg";
 import image4 from "../images/weatherScreenshot.png";
 import rnbpic from "../images/rnb_pic.png";
-import comingSoonPic from "../images/coming_soon.png";
+import comingSoonPic from "../images/coming_soon.webp";
 
 export const projects = [
   {
