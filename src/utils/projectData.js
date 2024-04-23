@@ -3,13 +3,15 @@ import image2 from "../images/screenshotTGuide.png";
 import image3 from "../images/ptc-binder-pic.jpg";
 import image4 from "../images/weatherScreenshot.png";
 import rnbpic from "../images/rnb_pic.png";
+import comingSoonPic from "../images/coming_soon.png";
 
 export const projects = [
   {
     name: "Room & Bord Architecture",
     description:"A website built with Next.js that showcases the work of an architecture firm. Utilizes a very small CMS that me and my partner built to allow the client to update the site themselves.",
     picture: rnbpic,
-    url: "https://roomandbord-arch.com"
+    url: "https://roomandbord-arch.com",
+    github: "https://github.com/McTastic"
   },
   {
     name: "PTC-Binder",
@@ -43,4 +45,11 @@ export const projects = [
     url: "https://mctastic.github.io/Weather-Dashboard/",
     github: "https://github.com/McTastic/Weather-Dashboard"
   },
+  {
+    name: "Coming Soon!",
+    description: "More projects coming soon!",
+    picture: comingSoonPic,
+    url: "https://github.com/McTastic",
+    github: "https://github.com/McTastic"
+  }
 ];
