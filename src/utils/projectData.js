@@ -2,7 +2,7 @@ import image1 from "../images/chatapp.png";
 import image2 from "../images/screenshotTGuide.png";
 import image3 from "../images/ptc-binder-pic.jpg";
 import image4 from "../images/weatherScreenshot.png";
-import rnbpic from "../images/rnbpic.png";
+import rnbpic from "../images/rnb_pic.png";
 
 export const projects = [
   {
