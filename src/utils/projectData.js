@@ -2,8 +2,15 @@ import image1 from "../images/chatapp.png";
 import image2 from "../images/screenshotTGuide.png";
 import image3 from "../images/ptc-binder-pic.jpg";
 import image4 from "../images/weatherScreenshot.png";
+import rnbpic from "../images/rnbpic.png";
 
 export const projects = [
+  {
+    name: "Room & Bord Architecture",
+    description:"A website built with Next.js that showcases the work of an architecture firm. Utilizes a very small CMS that me and my partner built to allow the client to update the site themselves.",
+    picture: rnbpic,
+    url: "https://roomandbord-arch.com"
+  },
   {
     name: "PTC-Binder",
     description:
