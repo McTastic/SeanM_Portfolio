@@ -1,4 +1,4 @@
-import ResumePDF from "../../utils/SeanM_Res.pdf";
+import ResumePDF from "../../utils/sean_m_res.pdf";
 import "../../css/resume.css"
 
 const Resume = () =>{
