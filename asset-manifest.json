@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.9dfd94e1.css",
-    "main.js": "/static/js/main.31bf48ce.js",
+    "main.js": "/static/js/main.38e495dc.js",
     "static/js/453.33827c8a.chunk.js": "/static/js/453.33827c8a.chunk.js",
     "static/media/rnb_pic.png": "/static/media/rnb_pic.857332a1ae4abade0eff.png",
     "static/media/screenshotTGuide.png": "/static/media/screenshotTGuide.49ac5bef7f9abe6b65fa.png",
     "static/media/weatherScreenshot.png": "/static/media/weatherScreenshot.8b56ae3e66ded672be50.png",
-    "static/media/SeanM_Res.pdf": "/static/media/SeanM_Res.fd0bbaf1ff7c5034eb6a.pdf",
     "static/media/ptc-binder-pic.jpg": "/static/media/ptc-binder-pic.5818caad748ace78d257.jpg",
+    "static/media/sean_m_res.pdf": "/static/media/sean_m_res.dae0e54e6118c0a7e0dc.pdf",
     "static/media/chatapp.png": "/static/media/chatapp.27e83157a93112de7982.png",
     "static/media/self_pic.jpg": "/static/media/self_pic.b34f3056cf8aa9032842.jpg",
     "static/media/coming_soon.webp": "/static/media/coming_soon.4aff13252babed313a38.webp",
     "index.html": "/index.html",
     "main.9dfd94e1.css.map": "/static/css/main.9dfd94e1.css.map",
-    "main.31bf48ce.js.map": "/static/js/main.31bf48ce.js.map",
+    "main.38e495dc.js.map": "/static/js/main.38e495dc.js.map",
     "453.33827c8a.chunk.js.map": "/static/js/453.33827c8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9dfd94e1.css",
-    "static/js/main.31bf48ce.js"
+    "static/js/main.38e495dc.js"
   ]
 }
